@@ -20,11 +20,11 @@ export class App extends Component {
     });
   };
 
-  countTotalFeedback() {
+  countTotalFeedback = () => {
     return this.state.good + this.state.neutral + this.state.bad;
   }
 
-  countPositiveFeedbackPercentage() {
+  countPositiveFeedbackPercentage = () => {
     return Math.floor((this.state.good / this.countTotalFeedback()) * 100);
   }
 
